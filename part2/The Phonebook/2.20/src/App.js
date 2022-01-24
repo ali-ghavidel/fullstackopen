@@ -27,7 +27,13 @@ const App = () => {
             setPersons(persons.filter((item) => item.id !== persons[i].id));
             alert(`${persons[i].name} deleted!`);
           })
-          .catch(() => console.log("error"))
+          .catch(() => {
+            setErorrMessage([`Information of ${persons[i].name} has already been removed from server`,'bad'])
+              setTimeout(() => {
+                setErorrMessage([null,'good'])
+              }, 4000);
+              setPersons(persons.filter((item) => item.id !== persons[i].id));
+          })
       : alert("doesn't deleted");
   };
 
