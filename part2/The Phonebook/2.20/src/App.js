@@ -54,10 +54,12 @@ const App = () => {
             }, 4000);
           }).catch( error => 
             {
+              console.log(newNameObject.id,'id');
               setErorrMessage([`Information of ${newNameObject.name} has already been removed from server`,'bad'])
               setTimeout(() => {
                 setErorrMessage([null,'good'])
               }, 4000);
+              setPersons(persons.filter((item) => item.name !== newNameObject.name));
             }
             )
         : alert(`${newName} doesn't change!`);
