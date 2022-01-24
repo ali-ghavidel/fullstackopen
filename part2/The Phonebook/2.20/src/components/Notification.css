@@ -1,0 +1,16 @@
+.success{
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border: 2px solid green;
+    border-radius: .25rem;
+    background-color: lightgray;
+    color: green;
+}
+.danger{
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border: 2px solid red;
+    border-radius: .25rem;
+    background-color: lightgray;
+    color: red;
+}
