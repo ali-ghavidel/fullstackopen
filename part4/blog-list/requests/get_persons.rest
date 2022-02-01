@@ -1,0 +1,17 @@
+GET   http://localhost:3001/api/users
+Content-Type: application/json
+
+{   
+    "title":"qqq",
+    "url":"fgdgfasdasf",
+    "password": "1111",
+    "author": "Wlasd Qiajsd"
+}
+
+# {   
+#     "username":"qwe",
+#     "name":"zzz",
+#     "password": "1111"
+# }
+
+
